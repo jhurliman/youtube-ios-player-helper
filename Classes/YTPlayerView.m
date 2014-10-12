@@ -750,6 +750,8 @@ NSString static *const kYTPlayerEmbedUrlRegexPattern = @"^http(s)://(www.)youtub
   webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
   webView.scrollView.scrollEnabled = NO;
   webView.scrollView.bounces = NO;
+  webView.backgroundColor = UIColor.clearColor;
+  webView.opaque = NO;
   return webView;
 }
 
